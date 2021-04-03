@@ -1,3 +1,3 @@
 'use strict';
 
-require('./dialog.js');
+require('./src/dialog.js');
