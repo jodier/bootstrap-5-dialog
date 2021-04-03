@@ -1,5 +1,5 @@
 /* bootstrap-5-dialog 1.0.0, dialog boxes for Bootstrap 5. https://github.com/jodier/bootstrap-5-dialog
- * (c) 2021 Jérôme Odier
+ *  (c) 2021 Jérôme Odier
  */
 
 /*--------------------------------------------------------------------------------------------------------------------*/
@@ -12,28 +12,37 @@ import __bootstrap_prompt_modal from './dialog_prompt.js';
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
-document.addEventListener('DOMContentLoaded', () => {
-
-	document.body.innerHTML = document.body.innerHTML
-	                          +
-	                          __bootstrap_alert_modal()
-	                          +
-	                          __bootstrap_confirm_modal()
-	                          +
-	                          __bootstrap_prompt_modal()
-	;
-
-}, false);
-
-/*--------------------------------------------------------------------------------------------------------------------*/
-
-bootstrap.Dialog = {
+window.Dialogs = {
 
 	/*----------------------------------------------------------------------------------------------------------------*/
 
-	_modal_alert: new bootstrap.Modal(document.getElementById('A5DFAFD2_AC27_BAAE_F80B_09012630F732')),
-	_modal_confirm: new bootstrap.Modal(document.getElementById('DC225400_E3D7_B3D1_CB76_DA2E915C1BA8')),
-	_modal_prompt: new bootstrap.Modal(document.getElementById('FA27DE47_B5D8_1DDE_9D31_818CF08C3264')),
+	init: function()
+	{
+		/*------------------------------------------------------------------------------------------------------------*/
+
+		const bootstrap = require('bootstrap');
+
+		/*------------------------------------------------------------------------------------------------------------*/
+
+		document.body.innerHTML = document.body.innerHTML
+		                          +
+		                          __bootstrap_alert_modal()
+		                          +
+		                          __bootstrap_confirm_modal()
+		                          +
+		                          __bootstrap_prompt_modal()
+		;
+
+		/*------------------------------------------------------------------------------------------------------------*/
+
+		this._modal_alert = new bootstrap.Modal(document.getElementById('A5DFAFD2_AC27_BAAE_F80B_09012630F732'));
+
+		this._modal_confirm = new bootstrap.Modal(document.getElementById('DC225400_E3D7_B3D1_CB76_DA2E915C1BA8'));
+
+		this._modal_prompt = new bootstrap.Modal(document.getElementById('FA27DE47_B5D8_1DDE_9D31_818CF08C3264'));
+
+		/*------------------------------------------------------------------------------------------------------------*/
+	},
 
 	/*----------------------------------------------------------------------------------------------------------------*/
 
@@ -69,6 +78,16 @@ bootstrap.Dialog = {
 			} else {
 				this._cancel(document.getElementById('BE21C0E4_17C8_81C1_23C4_943DC0497612').value);
 			}
+		}
+	},
+
+	/*----------------------------------------------------------------------------------------------------------------*/
+
+	fake: function(message, settings)
+	{
+		if(settings && settings['okay'])
+		{
+			settings['okay']();
 		}
 	},
 
@@ -190,5 +209,13 @@ bootstrap.Dialog = {
 
 	/*----------------------------------------------------------------------------------------------------------------*/
 };
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+document.addEventListener('DOMContentLoaded', () => {
+
+	Dialogs.init();
+
+}, false);
 
 /*--------------------------------------------------------------------------------------------------------------------*/

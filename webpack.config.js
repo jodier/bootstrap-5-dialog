@@ -64,6 +64,9 @@ module.exports = {
 				'parallel': true
 			})
 		]
+	},
+	externals: {
+		'bootstrap': 'bootstrap'
 	}
 };
 
