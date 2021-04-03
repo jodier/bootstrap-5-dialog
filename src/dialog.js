@@ -35,11 +35,11 @@ window.Dialogs = {
 
 		/*------------------------------------------------------------------------------------------------------------*/
 
-		this._modal_alert = new bootstrap.Modal(document.getElementById('A5DFAFD2_AC27_BAAE_F80B_09012630F732'));
+		this._modal_alert = new bootstrap.Modal(document.getElementById('A5DFAFD2_AC27_BAAE_F80B_09012630F732'), {backdrop: 'static', keyboard: false});
 
-		this._modal_confirm = new bootstrap.Modal(document.getElementById('DC225400_E3D7_B3D1_CB76_DA2E915C1BA8'));
+		this._modal_confirm = new bootstrap.Modal(document.getElementById('DC225400_E3D7_B3D1_CB76_DA2E915C1BA8'), {backdrop: 'static', keyboard: false});
 
-		this._modal_prompt = new bootstrap.Modal(document.getElementById('FA27DE47_B5D8_1DDE_9D31_818CF08C3264'));
+		this._modal_prompt = new bootstrap.Modal(document.getElementById('FA27DE47_B5D8_1DDE_9D31_818CF08C3264'), {backdrop: 'static', keyboard: false});
 
 		/*------------------------------------------------------------------------------------------------------------*/
 
@@ -152,6 +152,12 @@ window.Dialogs = {
 			}
 		}
 
+		if(title) {
+			document.getElementById('EE761A74_B773_521C_27F1_46A573032B8D').parentNode.style.display = 'flex';
+		} else {
+			document.getElementById('EE761A74_B773_521C_27F1_46A573032B8D').parentNode.style.display = 'none';
+		}
+
 		document.getElementById('ED71E448_64C1_AF42_4276_E41BAA4C8E0A').innerHTML = (okayLabel || '');
 		document.getElementById('EE761A74_B773_521C_27F1_46A573032B8D').innerHTML = (  title   || '');
 		document.getElementById('A80227E3_9C1B_0F2A_4584_DE76480E6CD1').innerHTML = ( message  || '');
@@ -191,6 +197,12 @@ window.Dialogs = {
 			if('cancel' in settings) {
 				this._cancel = settings['cancel'];
 			}
+		}
+
+		if(title) {
+			document.getElementById('C07AB38C_1079_1AEB_3901_EF4EE008E5B4').parentNode.style.display = 'flex';
+		} else {
+			document.getElementById('C07AB38C_1079_1AEB_3901_EF4EE008E5B4').parentNode.style.display = 'none';
 		}
 
 		document.getElementById('A41CEA51_4413_16BC_9E4C_977D3A350062').innerHTML = ( okayLabel  || '');
@@ -233,6 +245,12 @@ window.Dialogs = {
 			if('cancel' in settings) {
 				this._cancel = settings['cancel'];
 			}
+		}
+
+		if(title) {
+			document.getElementById('E9205E3C_C829_B3E2_3BAA_20A0E310F53A').parentNode.style.display = 'flex';
+		} else {
+			document.getElementById('E9205E3C_C829_B3E2_3BAA_20A0E310F53A').parentNode.style.display = 'none';
 		}
 
 		document.getElementById('A43989C8_BCC4_E4E6_45B5_F7865F5D3891').innerHTML = ( okayLabel  || '');
