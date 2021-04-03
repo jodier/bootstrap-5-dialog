@@ -12,14 +12,18 @@ import __bootstrap_prompt_modal from './dialog_prompt.js';
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
-document.body.innerHTML = document.body.innerHTML
-                          +
-                          __bootstrap_alert_modal()
-                          +
-                          __bootstrap_confirm_modal()
-                          +
-                          __bootstrap_prompt_modal()
-;
+document.addEventListener('DOMContentLoaded', () => {
+
+	document.body.innerHTML = document.body.innerHTML
+	                          +
+	                          __bootstrap_alert_modal()
+	                          +
+	                          __bootstrap_confirm_modal()
+	                          +
+	                          __bootstrap_prompt_modal()
+	;
+
+}, false);
 
 /*--------------------------------------------------------------------------------------------------------------------*/
 
