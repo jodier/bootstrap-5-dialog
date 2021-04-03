@@ -12,8 +12,8 @@ export default function __bootstrap_confirm_modal()
 				<span id="A5C212BA_7A31_78FD_12B6_E851FCF16F64"></span>
 			</div>
 			<div class="modal-footer px-3 py-1" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHklEQVQImWP8+fMnAwPDnz9/mCAUCwsLE4RiYGAAANfcC+UdZyIxAAAAAElFTkSuQmCC');">
-				<button class="btn btn-outline-danger" type="button" id="DF61835E_6EAA_ABC2_24B6_EB39EFFE46CB" onclick="Dialogs._trigger(1, false);">Cancel</button>
-				<button class="btn btn-outline-success" type="button" id="A41CEA51_4413_16BC_9E4C_977D3A350062" onclick="Dialogs._trigger(1, true);">Okay</button>
+				<button class="btn btn-outline-danger" type="button" id="DF61835E_6EAA_ABC2_24B6_EB39EFFE46CB">Cancel</button>
+				<button class="btn btn-outline-success" type="button" id="A41CEA51_4413_16BC_9E4C_977D3A350062">Okay</button>
 			</div>
 		</div>
 	</div>

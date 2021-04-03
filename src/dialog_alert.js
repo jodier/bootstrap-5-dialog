@@ -12,7 +12,7 @@ export default function __bootstrap_alert_modal()
 				<span id="A80227E3_9C1B_0F2A_4584_DE76480E6CD1"></span>
 			</div>
 			<div class="modal-footer px-3 py-1" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHklEQVQImWP8+fMnAwPDnz9/mCAUCwsLE4RiYGAAANfcC+UdZyIxAAAAAElFTkSuQmCC');">
-				<button class="btn btn-outline-secondary" type="button" id="ED71E448_64C1_AF42_4276_E41BAA4C8E0A" onclick="Dialogs._trigger(0, true);"></button>
+				<button class="btn btn-outline-secondary" type="button" id="ED71E448_64C1_AF42_4276_E41BAA4C8E0A"></button>
 			</div>
 		</div>
 	</div>

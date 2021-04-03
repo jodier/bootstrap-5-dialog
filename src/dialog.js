@@ -42,6 +42,34 @@ window.Dialogs = {
 		this._modal_prompt = new bootstrap.Modal(document.getElementById('FA27DE47_B5D8_1DDE_9D31_818CF08C3264'));
 
 		/*------------------------------------------------------------------------------------------------------------*/
+
+		document.getElementById('ED71E448_64C1_AF42_4276_E41BAA4C8E0A').addEventListener('click', () => {
+			this._trigger(0, true);
+		}, false);
+
+		document.getElementById('DF61835E_6EAA_ABC2_24B6_EB39EFFE46CB').addEventListener('click', () => {
+			this._trigger(1, false);
+		}, false);
+
+		document.getElementById('A41CEA51_4413_16BC_9E4C_977D3A350062').addEventListener('click', () => {
+			this._trigger(1, true);
+		}, false);
+
+		document.getElementById('C77F3CCA_CD38_CF08_F6F8_72E81546F8F5').addEventListener('click', () => {
+			this._trigger(2, false);
+		}, false);
+
+		document.getElementById('A43989C8_BCC4_E4E6_45B5_F7865F5D3891').addEventListener('click', () => {
+			this._trigger(2, true);
+		}, false);
+
+		/*------------------------------------------------------------------------------------------------------------*/
+
+		document.getElementById('BE21C0E4_17C8_81C1_23C4_943DC0497612').addEventListener('keypress', (e) => {
+			if(e.keyCode === 13) this._trigger(2, true);
+		}, false);
+
+		/*------------------------------------------------------------------------------------------------------------*/
 	},
 
 	/*----------------------------------------------------------------------------------------------------------------*/
@@ -213,7 +241,7 @@ window.Dialogs = {
 		document.getElementById('C892D8E2_D20D_7320_1642_DA7E1270DAB6').innerHTML = (  message   || '');
 		document.getElementById('BE21C0E4_17C8_81C1_23C4_943DC0497612').  value   = (   value    || '');
 
-		this._modal_prompt.show();
+		this._modal_prompt.show(); document.getElementById('BE21C0E4_17C8_81C1_23C4_943DC0497612').focus();
 	},
 
 	/*----------------------------------------------------------------------------------------------------------------*/
