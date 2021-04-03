@@ -1,3 +1,8 @@
+/*!
+ * bootstrap-5-dialog 1.0.0, dialog boxes for Bootstrap 5
+ * https://github.com/jodier/bootstrap-5-dialog
+ * Copyright (c) 2020-2021 Jérôme Odier
+ */
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
@@ -53,9 +58,6 @@ function __bootstrap_prompt_modal() {
   return "<div class=\"modal\" tabindex=\"-1\" id=\"FA27DE47_B5D8_1DDE_9D31_818CF08C3264\" style=\"z-index: 1061;\">\n\t<div class=\"modal-dialog mt-3\">\n\t\t<div class=\"modal-content\">\n\t\t\t<div class=\"modal-header px-3 py-1\">\n\t\t\t\t<h5 class=\"modal-title\" id=\"E9205E3C_C829_B3E2_3BAA_20A0E310F53A\"></h5>\n\t\t\t</div>\n\t\t\t<div class=\"modal-body px-3 py-3\">\n\t\t\t\t<label class=\"form-label\" for=\"BE21C0E4_17C8_81C1_23C4_943DC0497612\" id=\"C892D8E2_D20D_7320_1642_DA7E1270DAB6\"></label>\n\t\t\t\t<input class=\"form-control\" type=\"text\" id=\"BE21C0E4_17C8_81C1_23C4_943DC0497612\" autofocus=\"autofocus\" />\n\t\t\t</div>\n\t\t\t<div class=\"modal-footer px-3 py-1\" style=\"background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHklEQVQImWP8+fMnAwPDnz9/mCAUCwsLE4RiYGAAANfcC+UdZyIxAAAAAElFTkSuQmCC');\">\n\t\t\t\t<button class=\"btn btn-outline-danger\" type=\"button\" id=\"C77F3CCA_CD38_CF08_F6F8_72E81546F8F5\">Cancel</button>\n\t\t\t\t<button class=\"btn btn-outline-success\" type=\"button\" id=\"A43989C8_BCC4_E4E6_45B5_F7865F5D3891\">Okay</button>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>\n";
 }
 ;// CONCATENATED MODULE: ./src/dialog.js
-/* bootstrap-5-dialog 1.0.0, dialog boxes for Bootstrap 5. https://github.com/jodier/bootstrap-5-dialog
- * Copyright (c) 2021 Jérôme Odier
- */
 
 
 

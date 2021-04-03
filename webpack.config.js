@@ -1,5 +1,15 @@
 /*--------------------------------------------------------------------------------------------------------------------*/
 
+const PACKAGE = require('./package.json');
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+const BANNER = `bootstrap-5-dialog ` + PACKAGE.version + `, dialog boxes for Bootstrap 5
+https://github.com/jodier/bootstrap-5-dialog
+Copyright (c) 2020-` + new Date().getFullYear() + ` Jérôme Odier`;
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
 const BROWSER_LIST = [
 	">= 1%",
 	"last 1 major version",
@@ -45,9 +55,9 @@ module.exports = {
 				'use': {
 					'loader': 'babel-loader',
 					'options': {
+						'comments': false,
 						'compact': false,
 						'minified': false,
-						'shouldPrintComment': (txt) => /Copyright/.test(txt),
 						'presets': [
 							['@babel/preset-env', {
 								'targets': {
@@ -62,16 +72,27 @@ module.exports = {
 			/*--------------------------------------------------------------------------------------------------------*/
 		]
 	},
+	'externals': {
+		'bootstrap': 'bootstrap'
+	},
+	'plugins': [
+		new webpack.BannerPlugin({
+			'banner': BANNER
+		})
+	],
 	'optimization': {
 		'minimizer': [
 			new TerserPlugin({
 				'test': /\.min\.js$/,
-				'parallel': true
+				'parallel': true,
+				'extractComments': false,
+				'terserOptions': {
+					'format': {
+						'comments': /Copyright/,
+					}
+				}
 			})
 		]
-	},
-	externals: {
-		'bootstrap': 'bootstrap'
 	}
 };
 

@@ -1,3 +1,8 @@
+/*!
+ * bootstrap-5-dialog, dialog boxes for Bootstrap 5
+ * https://github.com/jodier/bootstrap-5-dialog
+ */
+
 /*--------------------------------------------------------------------------------------------------------------------*/
 
 export default function __bootstrap_confirm_modal()
