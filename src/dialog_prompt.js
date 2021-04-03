@@ -9,10 +9,8 @@ export default function __bootstrap_prompt_modal()
 				<h5 class="modal-title" id="E9205E3C_C829_B3E2_3BAA_20A0E310F53A"></h5>
 			</div>
 			<div class="modal-body px-3 py-3">
-				<div>
-					<label class="form-label" for="BE21C0E4_17C8_81C1_23C4_943DC0497612" id="C892D8E2_D20D_7320_1642_DA7E1270DAB6"></label>
-					<input class="form-control" type="text" id="BE21C0E4_17C8_81C1_23C4_943DC0497612" autofocus="autofocus" />
-				</div>
+				<label class="form-label" for="BE21C0E4_17C8_81C1_23C4_943DC0497612" id="C892D8E2_D20D_7320_1642_DA7E1270DAB6"></label>
+				<input class="form-control" type="text" id="BE21C0E4_17C8_81C1_23C4_943DC0497612" autofocus="autofocus" />
 			</div>
 			<div class="modal-footer px-3 py-1" style="background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHklEQVQImWP8+fMnAwPDnz9/mCAUCwsLE4RiYGAAANfcC+UdZyIxAAAAAElFTkSuQmCC');">
 				<button class="btn btn-outline-danger" type="button" id="C77F3CCA_CD38_CF08_F6F8_72E81546F8F5">Cancel</button>
