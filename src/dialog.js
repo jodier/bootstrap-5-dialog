@@ -1,5 +1,5 @@
 /* bootstrap-5-dialog 1.0.0, dialog boxes for Bootstrap 5. https://github.com/jodier/bootstrap-5-dialog
- *  (c) 2021 Jérôme Odier
+ * Copyright (c) 2021 Jérôme Odier
  */
 
 /*--------------------------------------------------------------------------------------------------------------------*/

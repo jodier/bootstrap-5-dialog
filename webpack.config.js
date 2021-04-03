@@ -45,9 +45,14 @@ module.exports = {
 				'use': {
 					'loader': 'babel-loader',
 					'options': {
+						'compact': false,
+						'minified': false,
+						'shouldPrintComment': (txt) => /Copyright/.test(txt),
 						'presets': [
 							['@babel/preset-env', {
-								'targets': BROWSER_LIST
+								'targets': {
+									"browsers": BROWSER_LIST
+								}
 							}]
 						]
 					}
