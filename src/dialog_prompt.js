@@ -3,7 +3,7 @@
 export default function __bootstrap_prompt_modal()
 {
 	return `<div class="modal" tabindex="-1" id="FA27DE47_B5D8_1DDE_9D31_818CF08C3264" style="z-index: 1061;">
-	<div class="modal-dialog mt-5">
+	<div class="modal-dialog mt-3">
 		<div class="modal-content">
 			<div class="modal-header px-3 py-1">
 				<h5 class="modal-title" id="E9205E3C_C829_B3E2_3BAA_20A0E310F53A"></h5>

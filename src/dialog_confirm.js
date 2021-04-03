@@ -3,7 +3,7 @@
 export default function __bootstrap_confirm_modal()
 {
 	return `<div class="modal" tabindex="-1" id="DC225400_E3D7_B3D1_CB76_DA2E915C1BA8" style="z-index: 1061;">
-	<div class="modal-dialog mt-5">
+	<div class="modal-dialog mt-3">
 		<div class="modal-content">
 			<div class="modal-header px-3 py-1">
 				<h5 class="modal-title" id="C07AB38C_1079_1AEB_3901_EF4EE008E5B4"></h5>

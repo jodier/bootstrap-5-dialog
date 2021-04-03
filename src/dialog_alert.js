@@ -3,7 +3,7 @@
 export default function __bootstrap_alert_modal()
 {
 	return `<div class="modal" tabindex="-1" id="A5DFAFD2_AC27_BAAE_F80B_09012630F732" style="z-index: 1061;">
-	<div class="modal-dialog mt-5">
+	<div class="modal-dialog mt-3">
 		<div class="modal-content">
 			<div class="modal-header px-3 py-1">
 				<h5 class="modal-title" id="EE761A74_B773_521C_27F1_46A573032B8D"></h5>
