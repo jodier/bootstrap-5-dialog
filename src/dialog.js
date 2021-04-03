@@ -57,7 +57,11 @@ window.Dialogs = {
 		{
 			this._modal_alert.hide();
 
-			this._okay();
+			if(q) {
+				this._okay();
+			} else {
+				this._cancel();
+			}
 		}
 		else if(mode === 1)
 		{
@@ -95,7 +99,7 @@ window.Dialogs = {
 
 	alert: function(message, settings)
 	{
-		let title = '&nbsp;';
+		let title = '';
 		let okayLabel = 'Close';
 
 		this._okay = () => {};
@@ -126,7 +130,7 @@ window.Dialogs = {
 
 	confirm: function(message, settings)
 	{
-		let title = '&nbsp;';
+		let title = '';
 		let okayLabel = 'Okay';
 		let cancelLabel = 'Cancel';
 
@@ -168,7 +172,7 @@ window.Dialogs = {
 
 	prompt: function(message, value, settings)
 	{
-		let title = '&nbsp;';
+		let title = '';
 		let okayLabel = 'Okay';
 		let cancelLabel = 'Cancel'
 
