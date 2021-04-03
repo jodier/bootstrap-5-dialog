@@ -46,6 +46,11 @@ window.Dialogs = {
 
 	/*----------------------------------------------------------------------------------------------------------------*/
 
+	okayLabel: 'Okay',
+	cancelLabel: 'Cancel',
+
+	/*----------------------------------------------------------------------------------------------------------------*/
+
 	_okay: () => {},
 	_cancel: () => {},
 
@@ -100,7 +105,7 @@ window.Dialogs = {
 	alert: function(message, settings)
 	{
 		let title = '';
-		let okayLabel = 'Close';
+		let okayLabel = this.okayLabel;
 
 		this._okay = () => {};
 
@@ -131,8 +136,8 @@ window.Dialogs = {
 	confirm: function(message, settings)
 	{
 		let title = '';
-		let okayLabel = 'Okay';
-		let cancelLabel = 'Cancel';
+		let okayLabel = this.okayLabel;
+		let cancelLabel = this.cancelLabel;
 
 		this._okay = () => {};
 		this._cancel = () => {};
@@ -173,8 +178,8 @@ window.Dialogs = {
 	prompt: function(message, value, settings)
 	{
 		let title = '';
-		let okayLabel = 'Okay';
-		let cancelLabel = 'Cancel'
+		let okayLabel = this.okayLabel;
+		let cancelLabel = this.cancelLabel;
 
 		this._okay = () => {};
 		this._cancel = () => {};
