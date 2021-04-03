@@ -1,5 +1,4 @@
-[![][License img]][License]
-[![][Build Status img]]
+[![][License img]][License] ![][Build Status img]
 
 bootstrap-5-dialog
 ==================
